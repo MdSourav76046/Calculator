@@ -22,10 +22,8 @@ public class Methods {
         for(int i=0;i<s.length()-1;i++){
             if((s.charAt(i) == '+' || s.charAt(i) == '-' || s.charAt(i) == '/' || s.charAt(i) == 'x') && f==true){
                 f = false;
-                System.out.println("paisi re");
             }
             else if((s.charAt(i) == '+' || s.charAt(i) == '-' || s.charAt(i) == '/' || s.charAt(i) == 'x') && f==false){
-                System.out.println("ses sob sesj");
                 return false;
             }
         }
@@ -33,6 +31,15 @@ public class Methods {
     }
     public int getIndexOfPlus(String s){
         return s.indexOf('+')-1;
+    }
+    public int getIndexOfMinus(String s){
+        return s.indexOf('-')-1;
+    }
+    public int getIndexOfMultification(String s){
+        return s.indexOf('x')-1;
+    }
+    public int getIndexOfDivisor(String s){
+        return s.indexOf('/')-1;
     }
     public boolean lastValid(String s){
         int sz = s.length()-1;
